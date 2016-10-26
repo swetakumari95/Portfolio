@@ -7,8 +7,8 @@ body{
 
 .header{
     height: 100vh;
-    background-image: url(../images/poppy.jpg);
-    color: white;
+    background-image: url(../images/img1.jpg);
+    color: #343838;
     background-size: cover;
     
     display: flex;
@@ -18,5 +18,7 @@ body{
 }
 
 .header h1, .header h3{
-    margin: 0;
+    margin: 2px auto;
+    padding: 0 4px;
+    background-color: #008c9e;
 }
