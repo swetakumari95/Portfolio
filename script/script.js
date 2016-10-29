@@ -5,6 +5,7 @@ $(document).ready(function(){
             $(".navbar").addClass("hide");
         else
             $(".navbar").removeClass("hide");
+        
         if ($(window).scrollTop()>=$(".header").height()){
             $(".navbar").css({"backgroundColor": "#343838"});
             $(".navbar li a").css({"color": "white"});
@@ -12,7 +13,8 @@ $(document).ready(function(){
             $(".navbar").css({"backgroundColor": "white"});
             $(".navbar li a").css({"color": "#343838"});
         }
+        
         $(".header h1, .header h3").css("opacity", 1 - $(window).scrollTop() / 200);
+        
     });
-    
 });

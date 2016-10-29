@@ -40,6 +40,27 @@ body{
     color: white;
 }
 
+#icon{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    
+    .navbar li{
+        display: none;
+    }
+    
+    #myName{
+        display: inline-block;
+    }
+    
+    #icon{
+        display: inline-block;
+        padding: 0 5vw;
+    }
+    
+}
+
 .header{
     clear: both;
     height: 100vh;
