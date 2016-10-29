@@ -5,7 +5,44 @@ body{
     margin: 0px;
 }
 
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    //overflow: hidden;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+} 
+
+.navbar.hide{
+    display: none;
+}
+
+#myName{
+    float: left;
+}
+
+.navbar li{
+    float: right;
+}
+
+.navbar li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #343838;
+    text-align: center;
+    padding: 2vh 2vw;
+}
+
+.navbar li a:hover{
+    background-color: #008c9e;
+    color: white;
+}
+
 .header{
+    clear: both;
     height: 100vh;
     background-image: url(../images/img1.jpg);
     color: #343838;
