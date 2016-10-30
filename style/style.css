@@ -42,6 +42,7 @@ body{
 
 #icon{
     display: none;
+    padding: 0 5vw;
 }
 
 @media screen and (max-width:600px){
@@ -50,15 +51,34 @@ body{
         display: none;
     }
     
-    #myName{
+    .navbar #myName{
         display: inline-block;
     }
     
-    #icon{
+    .navbar #icon{
         display: inline-block;
-        padding: 0 5vw;
     }
     
+    
+    .navbar.responsive #icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navbar.responsive #myName{
+        display: none;
+    }
+    
+    .navbar.responsive li{
+        float: none;
+        display: block;
+    }
+    
+    .navbar.responsive li a{
+        display: block;
+        text-align: left;
+    }
 }
 
 .header{

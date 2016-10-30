@@ -17,4 +17,13 @@ $(document).ready(function(){
         $(".header h1, .header h3").css("opacity", 1 - $(window).scrollTop() / 200);
         
     });
+    
+    $("#icon").click(function(){
+        if ($(".navbar").hasClass("responsive")){
+            $(".navbar").removeClass("responsive");
+        }else{
+            $(".navbar").addClass("responsive");
+        }
+	});
+    
 });
