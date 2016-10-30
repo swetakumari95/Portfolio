@@ -107,17 +107,11 @@ body{
     background-color: #008c9e;
 }
 
-/*for the main content of the page*/
-
-.container{
-    width: 90%;
-    margin: 10px auto;
-}
-
 /*styling the about me section*/
 
 .aboutMe{
-    margin: 30px;
+    margin: 30px auto;
+    padding: 0 50px;
 }
 
 .aboutMe:after{
@@ -141,7 +135,7 @@ body{
 }
 
 .aboutMe .info{
-    max-width: 45vw;
+    width: 45vw;
     height: 300px;
     padding: 0 20px;
     text-align: center;
@@ -153,7 +147,7 @@ body{
 }
 
 /*making the about me section responsive*/
-@media screen and (max-width:990px){
+@media screen and (max-width:1000px){
     
     .aboutMe .pic{
         height: 250px;
@@ -167,11 +161,12 @@ body{
     
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 900px){
     
     .aboutMe{
         align-items: center;
-        margin: 0;
+        margin: 20px auto;
+        padding: 0;
     }
     
     .aboutMe .pic{
@@ -185,8 +180,18 @@ body{
     .aboutMe .info{
         display: block;
         float: none;
-        margin: 10px auto;
+        margin: 0 auto;
         height: auto;
+        width: 80vw;
+    }
+    
+}
+
+@media screen and (max-width:380px){
+    
+    .aboutMe .pic{
+        height: 200px;
+        width: 200px;
     }
     
 }
