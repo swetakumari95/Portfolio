@@ -5,6 +5,8 @@ body{
     margin: 0px;
 }
 
+/*styling the navbar*/
+
 .navbar{
     list-style-type: none;
     margin: 0;
@@ -35,6 +37,8 @@ body{
     padding: 2vh 2vw;
 }
 
+/*navbar hover effects*/
+
 .navbar li a:hover{
     background-color: #008c9e;
     color: white;
@@ -44,6 +48,8 @@ body{
     display: none;
     padding: 0 5vw;
 }
+
+/*responsiveness for navbar*/
 
 @media screen and (max-width:600px){
     
@@ -58,7 +64,6 @@ body{
     .navbar #icon{
         display: inline-block;
     }
-    
     
     .navbar.responsive #icon{
         position: absolute;
@@ -81,6 +86,8 @@ body{
     }
 }
 
+/*full screen landing page for header*/
+
 .header{
     clear: both;
     height: 100vh;
@@ -99,3 +106,50 @@ body{
     padding: 0 4px;
     background-color: #008c9e;
 }
+
+/*for the main content of the page*/
+
+.container{
+    width: 90%;
+    margin: 10px auto;
+}
+
+/*styling the about me section*/
+
+.aboutMe{
+    margin: 30px;
+}
+
+.aboutMe:after{
+    content: "";
+    clear:both;
+    display: block;
+}
+
+.aboutMe .pic{
+    height: 300px;
+    width: 300px;
+    float: left;
+    display: inline-block;
+    margin: 0 1.5vw;
+    object-fit: fill;
+}
+
+.aboutMe .pic img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.aboutMe .info{
+    max-width: 45vw;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    float: right;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*making the about me section responsive*/
