@@ -153,3 +153,40 @@ body{
 }
 
 /*making the about me section responsive*/
+@media screen and (max-width:990px){
+    
+    .aboutMe .pic{
+        height: 250px;
+        width: 250px;
+        padding: 10px 0;
+    }
+    
+    .aboutMe .info h2{
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 880px){
+    
+    .aboutMe{
+        align-items: center;
+        margin: 0;
+    }
+    
+    .aboutMe .pic{
+        height: 300px;
+        width: 300px;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .aboutMe .info{
+        display: block;
+        float: none;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+}
